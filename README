@@ -1,0 +1,25 @@
+# Marketing to Potential caravan Policy Buyers
+
+Problem Statement - 
+Direct mailings to a company’s potential customers – “junk mail” to many – can effectively market a product or a 
+service. However, as we all know, much of this junk mail is really of no interest to the people that receive it. Most of it ends up thrown
+away, not only wasting the money that the company spent on it but also filling up landfill waste sites or needing to be recycled.
+If the company has a better understanding of who their potential customers are, they would know more accurately who to send it to, 
+so some of this waste and expense could be reduced.
+
+1.  predicted whether a customer is interested #in a caravan insurance policy from other data about the customer.
+
+2.  Information about customers consists of #86 variables and includes product usage data and socio-demographic data derived from zip-area 
+codes.
+
+3.  We performed data preprocessing by cleaning our data variables and checked #for any Null values in our table, and then out of 86 variables
+we separated our target variable and input variables and created dummies #for variables that were categorical in nature
+
+4.  Used a Logistic Regression Model #for analysis as it satisfied Regression assumptions like Linearity, lower Endogeneity of regressors,
+Normality and Homoscedasticity, No autocorrelation and no multicollinearity
+
+5. Used GridSearchCV to check which parameters would fit best the parameters passed were l1 and l2 normalization penalties, 
+Inverse regularization parameter, and we use class_weight to balance out our imbalanced data as one side being favored over other
+will skew the results #in the direction of the majority values as they are higher in number
+
+6.  We calculated our cutoff score using f-beta score
